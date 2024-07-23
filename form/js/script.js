@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
     function checkValidity() {
         let isValid = true;
         const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
-        const phonePattern = /^(\+33|0)[67]\d{8}$/;
+        const phonePattern = /^(\+33)[67]\d{8}$/;
         let firstInvalidField = null;
         // Clear previous error messages
         form.querySelectorAll('.error-message').forEach(el => el.remove());
